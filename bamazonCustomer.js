@@ -72,7 +72,7 @@ function start(){
 			{id: ans.id}
 			], function(err, result){
 				if(err) throw err;
-				console.log("Success! Your total is $" + grandTotal.toFixed(2) + ". Your item(s) will be shipped to you in 3-5 business days.");
+				console.log("You order has been received! Your total is $" + grandTotal.toFixed(2) + ". Your item(s) will be shipped to you in 3-5 business days.");
 			});
 	
 			connection.query("SELECT * FROM Departments", function(err, deptRes){
